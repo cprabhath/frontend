@@ -19,7 +19,7 @@ const addPhoneOperator = () => {
     setLoading(true);
 
     if (!email || !fullName || !nic || !phone || !address) {
-      toast.error("All fields are required");
+      toast.error("This email is already in use 😒");
       setLoading(false);
       return;
     }
@@ -205,7 +205,7 @@ const addPhoneOperator = () => {
                     type="text"
                     id="form6Example7"
                     className="form-control"
-                    value={new Date(date).toLocaleString()}
+                    value={date ? new Date(date).toLocaleString() : ""}
                     disabled={true}
                   />
                 </div>

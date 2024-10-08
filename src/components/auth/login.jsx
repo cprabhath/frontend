@@ -90,7 +90,8 @@ const Login = () => {
                       </div>
                       {!isBackendConnected && (
                         <div className="alert alert-danger">
-                          Sorry! Server is not connected. Please try again later 😞
+                          <strong>⚠️ Warning! </strong> Cannot connect to backend
+                          server! System will temporarily be unavailable.
                         </div>
                       )}
                       <form className="user" autoComplete="none">

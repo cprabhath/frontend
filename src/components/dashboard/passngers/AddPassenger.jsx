@@ -208,7 +208,7 @@ const AddPassenger = () => {
                     type="text"
                     id="form6Example7"
                     className="form-control"
-                    value={new Date(date).toLocaleString()}
+                    value={date ? new Date(date).toLocaleString() : ""}
                     disabled={true}
                   />
                 </div>
